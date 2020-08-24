@@ -22,7 +22,7 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleInputChange(event) {  // event = in this case, attached to any change in the input
+  handleInputChange(event) {  // event = in this case, event is attached to any change in the input (one key stroke at a time)
     const targetElement = event.target;  // target = whatever element it's happening to (in this case, input)
     const value = targetElement.value;  // value = what's being typed into it
     const name = targetElement.name;   // name = attribute I assigned to the element
